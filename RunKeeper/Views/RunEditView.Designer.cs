@@ -28,135 +28,246 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.runDateLabel = new System.Windows.Forms.Label();
             this.runDistanceLabel = new System.Windows.Forms.Label();
             this.runDurationLabel = new System.Windows.Forms.Label();
             this.runPaceLabel = new System.Windows.Forms.Label();
             this.runNotesLabel = new System.Windows.Forms.Label();
-            this.runShoesLabel = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.runDateTextBox = new System.Windows.Forms.TextBox();
+            this.runModelBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.runDistanceTextBox = new System.Windows.Forms.TextBox();
+            this.runDurationTextBox = new System.Windows.Forms.TextBox();
+            this.runPaceTextBox = new System.Windows.Forms.TextBox();
+            this.runNotesTextBox = new System.Windows.Forms.TextBox();
+            this.runTemperatureTextBox = new System.Windows.Forms.TextBox();
+            this.temperatureLabel = new System.Windows.Forms.Label();
+            this.elevationGainTextBox = new System.Windows.Forms.TextBox();
+            this.elevationGainLabel = new System.Windows.Forms.Label();
+            this.shoesUsedTextBox = new System.Windows.Forms.TextBox();
+            this.shoesUsedLabel = new System.Windows.Forms.Label();
+            this.humidityTextBox = new System.Windows.Forms.TextBox();
+            this.humidityLabel = new System.Windows.Forms.Label();
+            this.avgHRTextBox = new System.Windows.Forms.TextBox();
+            this.avgHRLabel = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.runModelBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // runDateLabel
             // 
             this.runDateLabel.AutoSize = true;
-            this.runDateLabel.Location = new System.Drawing.Point(67, 42);
+            this.runDateLabel.Location = new System.Drawing.Point(74, 21);
+            this.runDateLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.runDateLabel.Name = "runDateLabel";
-            this.runDateLabel.Size = new System.Drawing.Size(49, 25);
+            this.runDateLabel.Size = new System.Drawing.Size(41, 20);
             this.runDateLabel.TabIndex = 2;
             this.runDateLabel.Text = "Date";
             // 
             // runDistanceLabel
             // 
             this.runDistanceLabel.AutoSize = true;
-            this.runDistanceLabel.Location = new System.Drawing.Point(37, 101);
+            this.runDistanceLabel.Location = new System.Drawing.Point(49, 70);
+            this.runDistanceLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.runDistanceLabel.Name = "runDistanceLabel";
-            this.runDistanceLabel.Size = new System.Drawing.Size(79, 25);
+            this.runDistanceLabel.Size = new System.Drawing.Size(66, 20);
             this.runDistanceLabel.TabIndex = 3;
             this.runDistanceLabel.Text = "Distance";
             // 
             // runDurationLabel
             // 
             this.runDurationLabel.AutoSize = true;
-            this.runDurationLabel.Location = new System.Drawing.Point(35, 160);
+            this.runDurationLabel.Location = new System.Drawing.Point(48, 119);
+            this.runDurationLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.runDurationLabel.Name = "runDurationLabel";
-            this.runDurationLabel.Size = new System.Drawing.Size(81, 25);
+            this.runDurationLabel.Size = new System.Drawing.Size(67, 20);
             this.runDurationLabel.TabIndex = 4;
             this.runDurationLabel.Text = "Duration";
             // 
             // runPaceLabel
             // 
             this.runPaceLabel.AutoSize = true;
-            this.runPaceLabel.Location = new System.Drawing.Point(69, 219);
+            this.runPaceLabel.Location = new System.Drawing.Point(76, 168);
+            this.runPaceLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.runPaceLabel.Name = "runPaceLabel";
-            this.runPaceLabel.Size = new System.Drawing.Size(47, 25);
+            this.runPaceLabel.Size = new System.Drawing.Size(39, 20);
             this.runPaceLabel.TabIndex = 5;
             this.runPaceLabel.Text = "Pace";
             // 
             // runNotesLabel
             // 
             this.runNotesLabel.AutoSize = true;
-            this.runNotesLabel.Location = new System.Drawing.Point(57, 278);
+            this.runNotesLabel.Location = new System.Drawing.Point(67, 462);
+            this.runNotesLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.runNotesLabel.Name = "runNotesLabel";
-            this.runNotesLabel.Size = new System.Drawing.Size(59, 25);
+            this.runNotesLabel.Size = new System.Drawing.Size(48, 20);
             this.runNotesLabel.TabIndex = 6;
             this.runNotesLabel.Text = "Notes";
             // 
-            // runShoesLabel
+            // runDateTextBox
             // 
-            this.runShoesLabel.AutoSize = true;
-            this.runShoesLabel.Location = new System.Drawing.Point(56, 337);
-            this.runShoesLabel.Name = "runShoesLabel";
-            this.runShoesLabel.Size = new System.Drawing.Size(60, 25);
-            this.runShoesLabel.TabIndex = 7;
-            this.runShoesLabel.Text = "Shoes";
+            this.runDateTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.runModelBindingSource, "RunDate", true));
+            this.runDateTextBox.Location = new System.Drawing.Point(119, 18);
+            this.runDateTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.runDateTextBox.Name = "runDateTextBox";
+            this.runDateTextBox.Size = new System.Drawing.Size(121, 27);
+            this.runDateTextBox.TabIndex = 8;
             // 
-            // textBox2
+            // runModelBindingSource
             // 
-            this.textBox2.Location = new System.Drawing.Point(122, 39);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(150, 31);
-            this.textBox2.TabIndex = 8;
+            this.runModelBindingSource.DataSource = typeof(RunKeeper.Classes.RunModel);
             // 
-            // textBox3
+            // runDistanceTextBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(122, 98);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(150, 31);
-            this.textBox3.TabIndex = 9;
+            this.runDistanceTextBox.Location = new System.Drawing.Point(119, 67);
+            this.runDistanceTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.runDistanceTextBox.Name = "runDistanceTextBox";
+            this.runDistanceTextBox.Size = new System.Drawing.Size(121, 27);
+            this.runDistanceTextBox.TabIndex = 9;
             // 
-            // textBox4
+            // runDurationTextBox
             // 
-            this.textBox4.Location = new System.Drawing.Point(122, 157);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(150, 31);
-            this.textBox4.TabIndex = 10;
+            this.runDurationTextBox.Location = new System.Drawing.Point(119, 116);
+            this.runDurationTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.runDurationTextBox.Name = "runDurationTextBox";
+            this.runDurationTextBox.Size = new System.Drawing.Size(121, 27);
+            this.runDurationTextBox.TabIndex = 10;
             // 
-            // textBox5
+            // runPaceTextBox
             // 
-            this.textBox5.Location = new System.Drawing.Point(122, 216);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(150, 31);
-            this.textBox5.TabIndex = 11;
+            this.runPaceTextBox.Location = new System.Drawing.Point(119, 165);
+            this.runPaceTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.runPaceTextBox.Name = "runPaceTextBox";
+            this.runPaceTextBox.Size = new System.Drawing.Size(121, 27);
+            this.runPaceTextBox.TabIndex = 11;
             // 
-            // textBox6
+            // runNotesTextBox
             // 
-            this.textBox6.Location = new System.Drawing.Point(122, 275);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(150, 31);
-            this.textBox6.TabIndex = 12;
+            this.runNotesTextBox.Location = new System.Drawing.Point(119, 459);
+            this.runNotesTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.runNotesTextBox.Name = "runNotesTextBox";
+            this.runNotesTextBox.Size = new System.Drawing.Size(121, 27);
+            this.runNotesTextBox.TabIndex = 12;
             // 
-            // textBox7
+            // runTemperatureTextBox
             // 
-            this.textBox7.Location = new System.Drawing.Point(122, 334);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(150, 31);
-            this.textBox7.TabIndex = 13;
+            this.runTemperatureTextBox.Location = new System.Drawing.Point(119, 263);
+            this.runTemperatureTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.runTemperatureTextBox.Name = "runTemperatureTextBox";
+            this.runTemperatureTextBox.Size = new System.Drawing.Size(121, 27);
+            this.runTemperatureTextBox.TabIndex = 15;
+            // 
+            // temperatureLabel
+            // 
+            this.temperatureLabel.AutoSize = true;
+            this.temperatureLabel.Location = new System.Drawing.Point(22, 266);
+            this.temperatureLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.temperatureLabel.Name = "temperatureLabel";
+            this.temperatureLabel.Size = new System.Drawing.Size(93, 20);
+            this.temperatureLabel.TabIndex = 14;
+            this.temperatureLabel.Text = "Temperature";
+            // 
+            // elevationGainTextBox
+            // 
+            this.elevationGainTextBox.Location = new System.Drawing.Point(119, 361);
+            this.elevationGainTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.elevationGainTextBox.Name = "elevationGainTextBox";
+            this.elevationGainTextBox.Size = new System.Drawing.Size(121, 27);
+            this.elevationGainTextBox.TabIndex = 17;
+            // 
+            // elevationGainLabel
+            // 
+            this.elevationGainLabel.AutoSize = true;
+            this.elevationGainLabel.Location = new System.Drawing.Point(11, 364);
+            this.elevationGainLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.elevationGainLabel.Name = "elevationGainLabel";
+            this.elevationGainLabel.Size = new System.Drawing.Size(104, 20);
+            this.elevationGainLabel.TabIndex = 16;
+            this.elevationGainLabel.Text = "Elevation Gain";
+            // 
+            // shoesUsedTextBox
+            // 
+            this.shoesUsedTextBox.Location = new System.Drawing.Point(119, 410);
+            this.shoesUsedTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.shoesUsedTextBox.Name = "shoesUsedTextBox";
+            this.shoesUsedTextBox.Size = new System.Drawing.Size(121, 27);
+            this.shoesUsedTextBox.TabIndex = 19;
+            // 
+            // shoesUsedLabel
+            // 
+            this.shoesUsedLabel.AutoSize = true;
+            this.shoesUsedLabel.Location = new System.Drawing.Point(30, 413);
+            this.shoesUsedLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.shoesUsedLabel.Name = "shoesUsedLabel";
+            this.shoesUsedLabel.Size = new System.Drawing.Size(85, 20);
+            this.shoesUsedLabel.TabIndex = 18;
+            this.shoesUsedLabel.Text = "Shoes Used";
+            // 
+            // humidityTextBox
+            // 
+            this.humidityTextBox.Location = new System.Drawing.Point(119, 312);
+            this.humidityTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.humidityTextBox.Name = "humidityTextBox";
+            this.humidityTextBox.Size = new System.Drawing.Size(121, 27);
+            this.humidityTextBox.TabIndex = 21;
+            // 
+            // humidityLabel
+            // 
+            this.humidityLabel.AutoSize = true;
+            this.humidityLabel.Location = new System.Drawing.Point(45, 315);
+            this.humidityLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.humidityLabel.Name = "humidityLabel";
+            this.humidityLabel.Size = new System.Drawing.Size(70, 20);
+            this.humidityLabel.TabIndex = 20;
+            this.humidityLabel.Text = "Humidity";
+            // 
+            // avgHRTextBox
+            // 
+            this.avgHRTextBox.Location = new System.Drawing.Point(119, 214);
+            this.avgHRTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.avgHRTextBox.Name = "avgHRTextBox";
+            this.avgHRTextBox.Size = new System.Drawing.Size(121, 27);
+            this.avgHRTextBox.TabIndex = 23;
+            // 
+            // avgHRLabel
+            // 
+            this.avgHRLabel.AutoSize = true;
+            this.avgHRLabel.Location = new System.Drawing.Point(27, 217);
+            this.avgHRLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.avgHRLabel.Name = "avgHRLabel";
+            this.avgHRLabel.Size = new System.Drawing.Size(88, 20);
+            this.avgHRLabel.TabIndex = 22;
+            this.avgHRLabel.Text = "Average HR";
             // 
             // RunEditView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(437, 407);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.runShoesLabel);
+            this.ClientSize = new System.Drawing.Size(537, 633);
+            this.Controls.Add(this.avgHRTextBox);
+            this.Controls.Add(this.avgHRLabel);
+            this.Controls.Add(this.humidityTextBox);
+            this.Controls.Add(this.humidityLabel);
+            this.Controls.Add(this.shoesUsedTextBox);
+            this.Controls.Add(this.shoesUsedLabel);
+            this.Controls.Add(this.elevationGainTextBox);
+            this.Controls.Add(this.elevationGainLabel);
+            this.Controls.Add(this.runTemperatureTextBox);
+            this.Controls.Add(this.temperatureLabel);
+            this.Controls.Add(this.runNotesTextBox);
+            this.Controls.Add(this.runPaceTextBox);
+            this.Controls.Add(this.runDurationTextBox);
+            this.Controls.Add(this.runDistanceTextBox);
+            this.Controls.Add(this.runDateTextBox);
             this.Controls.Add(this.runNotesLabel);
             this.Controls.Add(this.runPaceLabel);
             this.Controls.Add(this.runDurationLabel);
             this.Controls.Add(this.runDistanceLabel);
             this.Controls.Add(this.runDateLabel);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "RunEditView";
             this.Text = "Add/Edit Run";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.RunEditView_FormClosing);
+            ((System.ComponentModel.ISupportInitialize)(this.runModelBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -169,12 +280,21 @@
         private Label runDurationLabel;
         private Label runPaceLabel;
         private Label runNotesLabel;
-        private Label runShoesLabel;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private TextBox textBox5;
-        private TextBox textBox6;
-        private TextBox textBox7;
+        private TextBox runDateTextBox;
+        private TextBox runDistanceTextBox;
+        private TextBox runDurationTextBox;
+        private TextBox runPaceTextBox;
+        private TextBox runNotesTextBox;
+        private TextBox runTemperatureTextBox;
+        private Label temperatureLabel;
+        private TextBox elevationGainTextBox;
+        private Label elevationGainLabel;
+        private TextBox shoesUsedTextBox;
+        private Label shoesUsedLabel;
+        private BindingSource runModelBindingSource;
+        private TextBox humidityTextBox;
+        private Label humidityLabel;
+        private TextBox avgHRTextBox;
+        private Label avgHRLabel;
     }
 }

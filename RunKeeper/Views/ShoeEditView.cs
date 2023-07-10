@@ -18,5 +18,10 @@ namespace RunKeeper.Views
             editShoeModel = new ShoeModel(existingShoe);
         }
         #endregion
+
+        private void ShoeEditView_FormClosing(object sender, FormClosingEventArgs e)
+        {
+
+        }
     }
 }
